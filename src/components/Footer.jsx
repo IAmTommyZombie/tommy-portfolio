@@ -79,7 +79,7 @@ export default function Footer() {
           />{" "}
           GitHub
         </MuiLink>
-        <MuiLink href="mailto:your.email@example.com" sx={linkStyle}>
+        <MuiLink href="mailto:thomasscales13@yahoo.com" sx={linkStyle}>
           <EmailIcon
             sx={{
               verticalAlign: "middle",

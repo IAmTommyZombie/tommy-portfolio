@@ -47,7 +47,7 @@ const theme = createTheme({
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/tommy-portfolio">
         <Box
           sx={{
             minHeight: "100vh",
