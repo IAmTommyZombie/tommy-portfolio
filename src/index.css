@@ -1,0 +1,107 @@
+/* Root and global resets */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #f4f4f8; /* Match App.jsx background */
+  }
+}
+
+/* Body styling for full viewport coverage */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f8; /* Consistent with App.jsx */
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Link styling */
+a {
+  font-weight: 500;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #747bff;
+  text-decoration: underline;
+}
+
+/* Button styling */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Heading sizes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.2em;
+}
+
+/* Unordered list reset */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Responsive container class */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Default for desktop */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Default padding */
+}
+
+/* Tighter mobile adjustments (up to 480px for iPhone-specific sizes) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%; /* Full width */
+    padding: 5px; /* Minimal padding on very small screens */
+  }
+}
+
+/* Optional: Debug borders (remove after testing) */
+/* .container { border: 1px solid green; } */
